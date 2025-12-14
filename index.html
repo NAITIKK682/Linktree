@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel="preload" href="assets/images/logo.png" as="image" type="image/png">
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon.png">
+    <link rel="icon" href="assets/images/favicon.png" type="image/png">
+    <title>Naitik Kushwaha | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- ✅ CLICK & MAILTO HARD FIX (ADDED, NOTHING REMOVED) -->
+    <style>
+        /* Background layers should never catch clicks */
+        .background-overlay,
+        .animated-background,
+        #bg-canvas,
+        #stars1,
+        #stars2,
+        #stars3 {
+            pointer-events: none !important;
+            z-index: 0 !important;
+        }
+
+        /* Overlay div must not block links */
+        .page-item {
+            pointer-events: none !important;
+        }
+
+        /* Anchor must always be on top */
+        .page-item-each {
+            position: relative;
+            z-index: 9999 !important;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Snowfall Background Animation -->
+    <section class="animated-background">
+        <div id="stars1"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+    </section>
+    <!-- End of Snowfall Background Animation -->
+
+    <div class="min-h-full flex-h-center" id="background_div">
+        <input type="hidden" value="https://bio.link" id="app-url">
+        <input type="hidden" value="null" id="is-featured">
+        <canvas id="bg-canvas" class="background-overlay"></canvas>
+
+        <div class="mt-48 page-full-wrap relative">
+            <input type="hidden" value="creator-page" id="page-type">
+
+            <img class="display-image m-auto" data-src="assets/images/logo.png" src="assets/images/logo.png"
+                alt="Naitik Kushwaha" />
+
+            <h2 class="page-title page-text-color page-text-font mt-16 text-center">
+                Naitik Kushwaha
+            </h2>
+
+            <div class="mt-24">
+
+
+                <!-- Portfolio -->
+                <div class="page-item-wrap relative">
+                    <div class="page-item flex-both-center absolute"></div>
+                    <a target="_blank" rel="noopener noreferrer" class="page-item-each py-10 flex-both-center"
+                        href="https://naitik-portfolio-1.onrender.com/">
+                        <img src="assets/images/portfolio.png" class="link-each-image" alt="Portfolio">
+                        <span class="item-title text-center">Portfolio</span>
+                    </a>
+                </div>
+
+
+                <!-- LinkedIn -->
+                <div class="page-item-wrap relative">
+                    <div class="page-item flex-both-center absolute"></div>
+                    <a target="_blank" rel="noopener noreferrer" class="page-item-each py-10 flex-both-center"
+                        href="https://www.linkedin.com/in/naitik-kushwaha/">
+                        <img src="assets/images/linkedin.png" class="link-each-image" alt="LinkedIn">
+                        <span class="item-title text-center">LinkedIn</span>
+                    </a>
+                </div>
+
+                <!-- GitHub -->
+                <div class="page-item-wrap relative">
+                    <div class="page-item flex-both-center absolute"></div>
+                    <a target="_blank" rel="noopener noreferrer" class="page-item-each py-10 flex-both-center"
+                        href="https://github.com/NAITIKK682">
+                        <img src="assets/images/github.png" class="link-each-image" alt="GitHub">
+                        <span class="item-title text-center">GitHub</span>
+                    </a>
+                </div>
+
+                <!-- Instagram -->
+                <div class="page-item-wrap relative">
+                    <div class="page-item flex-both-center absolute"></div>
+                    <a target="_blank" rel="noopener noreferrer" class="page-item-each py-10 flex-both-center"
+                        href="https://www.instagram.com/mr_naitik_maurya">
+                        <img src="assets/images/instagram.png" class="link-each-image" alt="Instagram">
+                        <span class="item-title text-center">Instagram</span>
+                    </a>
+                </div>
+
+                <!-- LeetCode -->
+                <div class="page-item-wrap relative">
+                    <div class="page-item flex-both-center absolute"></div>
+                    <a target="_blank" rel="noopener noreferrer" class="page-item-each py-10 flex-both-center"
+                        href="https://leetcode.com/your-username">
+                        <img src="assets/images/leetcode.png" class="link-each-image" alt="LeetCode">
+                        <span class="item-title text-center">LeetCode</span>
+                    </a>
+                </div>
+
+
+                <!-- ✅Naitik  Email (NOW WORKS) -->
+                <div class="page-item-wrap relative">
+                    <div class="page-item flex-both-center absolute"></div>
+                    <a class="page-item-each py-10 flex-both-center" href="mailto:naitikk682@gmail.com">
+                        <img src="assets/images/email.png" class="link-each-image" alt="Email">
+                        <span class="item-title text-center">
+                            naitikk682@gmail.com
+                        </span>
+                    </a>
+                </div>
+
+
+                <!-- Contact / Inquiry Form -->
+                <!DOCTYPE html>
+                <html lang="en">
+
+                <head>
+                    <meta charset="UTF-8" />
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                    <title>Contact / Inquiry</title>
+                    <style>
+                        * {
+                            box-sizing: border-box;
+                            font-family: Segoe UI, sans-serif;
+                        }
+
+                        body {
+                            min-height: 100vh;
+                            background: radial-gradient(circle at top, #1a1f36, #0b0f1a);
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            color: #fff;
+                            margin: 0;
+                            padding: 0;
+                        }
+
+                        .contact-form {
+                            width: 100%;
+                            max-width: 420px;
+                            padding: 24px;
+                            background: rgba(255, 255, 255, 0.08);
+                            backdrop-filter: blur(14px);
+                            border-radius: 18px;
+                        }
+
+                        .contact-form h3 {
+                            text-align: center;
+                            margin-bottom: 18px;
+                        }
+
+                        .form-group {
+                            margin-bottom: 14px;
+                        }
+
+                        .form-label {
+                            font-size: 13px;
+                            color: #cfd6ff;
+                            margin-bottom: 6px;
+                            display: block;
+                        }
+
+                        .form-input,
+                        .form-textarea {
+                            width: 100%;
+                            padding: 12px;
+                            border-radius: 10px;
+                            border: 1px solid rgba(255, 255, 255, 0.2);
+                            background: rgba(0, 0, 0, 0.35);
+                            color: #fff;
+                        }
+
+                        .form-textarea {
+                            min-height: 90px;
+                            resize: none;
+                        }
+
+                        .form-submit {
+                            width: 100%;
+                            padding: 12px;
+                            border-radius: 12px;
+                            border: none;
+                            background: linear-gradient(135deg, #6c8cff, #8a5cff);
+                            color: #fff;
+                            font-weight: 600;
+                            cursor: pointer;
+                        }
+
+                        .form-submit:disabled {
+                            opacity: 0.7;
+                            cursor: not-allowed;
+                        }
+
+                        #formStatus {
+                            margin-top: 12px;
+                            text-align: center;
+                            font-size: 14px;
+                        }
+                    </style>
+                </head>
+
+                <body>
+                    <div class="contact-form">
+                        <h3>Contact / Inquiry</h3>
+                        <form id="contactForm">
+                            <!-- Honeypot for spam protection (FormSubmit) -->
+                            <div style="display:none;">
+                                <input type="text" name="_honey" />
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label">Name</label>
+                                <input type="text" name="name" autocomplete="name" required class="form-input" />
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label">Email</label>
+                                <input type="email" name="email" autocomplete="email" required class="form-input" />
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label">Phone</label>
+                                <input type="tel" name="phone" autocomplete="tel" required pattern="[0-9]{10}"
+                                    class="form-input" placeholder="10-digit number" />
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label">Message</label>
+                                <textarea name="message" required class="form-textarea"></textarea>
+                            </div>
+
+                            <button type="submit" class="form-submit" id="submitBtn">Send Inquiry</button>
+                            <p id="formStatus"></p>
+                        </form>
+                    </div>
+
+                    <script>
+                        const form = document.getElementById("contactForm");
+                        const statusText = document.getElementById("formStatus");
+                        const submitBtn = document.getElementById("submitBtn");
+
+                        form.addEventListener("submit", async (e) => {
+                            e.preventDefault();
+
+                            submitBtn.disabled = true;
+                            submitBtn.textContent = "Sending...";
+
+                            const name = form.name.value.trim();
+                            const email = form.email.value.trim();
+                            const phone = form.phone.value.trim();
+                            const message = form.message.value.trim();
+
+                            // Validation
+                            if (!/^\S+@\S+\.\S+$/.test(email)) {
+                                showError("❌ Invalid email");
+                                return;
+                            }
+
+                            if (!/^[0-9]{10}$/.test(phone)) {
+                                showError("❌ Phone must be 10 digits");
+                                return;
+                            }
+
+                            statusText.style.color = "#cfd6ff";
+                            statusText.innerText = "Saving data...";
+
+                            // ✅ DATA OBJECT — this will map directly to sheet columns
+                            const data = {
+                                name: name,
+                                email: email,
+                                phone: phone,
+                                message: message,
+                                timestamp: new Date().toLocaleString("en-IN", { timeZone: "Asia/Kolkata" }),
+                            };
+
+                            try {
+                                // ✅ 1. Save to SheetDB — send `data` directly (NO WRAPPER)
+                                const sheetDbRes = await fetch("https://sheetdb.io/api/v1/sy07jucxlfroi", {
+                                    method: "POST",
+                                    headers: { "Content-Type": "application/json" },
+                                    body: JSON.stringify(data), // 🔥 FIXED: was { data }, now just data
+                                });
+
+                                if (!sheetDbRes.ok) throw new Error("Failed to save to SheetDB");
+
+                                // ✅ 2. Send email via FormSubmit
+                                const formSubmitRes = await fetch("https://formsubmit.co/ajax/naitikk682@gmail.com", {
+                                    method: "POST",
+                                    headers: { "Content-Type": "application/json" },
+                                    body: JSON.stringify({
+                                        ...data,
+                                        _captcha: false,
+                                        _template: "table",
+                                        _autoresponse: true,
+                                    }),
+                                });
+
+                                if (!formSubmitRes.ok) throw new Error("Failed to send email");
+
+                                // ✅ 3. Open WhatsApp (safely encoded)
+                                const whatsappMsg = encodeURIComponent(
+                                    `New Inquiry:\nName: ${name}\nEmail: ${email}\nPhone: ${phone}\nMessage: ${message}`
+                                );
+                                window.open(`https://wa.me/918948866980?text=${whatsappMsg}`, "_blank");
+
+                                // ✅ Success
+                                statusText.style.color = "#4ade80";
+                                statusText.innerText = "✅ Message sent successfully!";
+                                form.reset();
+
+                            } catch (err) {
+                                console.error("Error:", err);
+                                showError("❌ Failed to send. Please try again.");
+                            } finally {
+                                setTimeout(() => {
+                                    submitBtn.disabled = false;
+                                    submitBtn.textContent = "Send Inquiry";
+                                }, 2000);
+                            }
+
+                            function showError(msg) {
+                                statusText.style.color = "#f87171";
+                                statusText.innerText = msg;
+                                submitBtn.disabled = false;
+                                submitBtn.textContent = "Send Inquiry";
+                            }
+                        });
+                    </script>
+                </body>
+
+                </html>
+
+
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
